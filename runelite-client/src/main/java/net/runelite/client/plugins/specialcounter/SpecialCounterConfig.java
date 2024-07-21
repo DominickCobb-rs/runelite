@@ -124,6 +124,17 @@ public interface SpecialCounterConfig extends Config
 
 	@ConfigItem(
 		position = 20,
+		keyName = "emberlightThreshold",
+		name = "Emberlight",
+		description = "Threshold for Emberlight (0 to disable)"
+	)
+	default int emberlightThreshold()
+	{
+		return 0;
+	}
+
+	@ConfigItem(
+		position = 25,
 		keyName = "arclightThreshold",
 		name = "Arclight",
 		description = "Threshold for Arclight (0 to disable)"
